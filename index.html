@@ -170,9 +170,9 @@
                 // If data is an object with message, use it. If it's a string (from JSON string), use it.
                 let displayMessage;
                 if (typeof data === 'object' && data !== null) {
-                    displayMessage = data.message || data.riskScore || JSON.stringify(data);
+                    displayMessage = String("Success");
                 } else {
-                    displayMessage = String(data);
+                    displayMessage = String("Success");
                 }
 
                 showResult(displayMessage, 'success');
