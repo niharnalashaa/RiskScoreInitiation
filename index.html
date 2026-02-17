@@ -184,6 +184,7 @@
                 // specific cleanup
                 identifyBtn.disabled = false;
                 identifyBtn.textContent = 'Calculate Risk Score';
+                sessionStorage.setItem("patientId", patientId);
                 window.location.href = "https://risk-score-display.vercel.app";
             }
         });
